@@ -19,13 +19,11 @@ const App = () => {
       return;
     }
 
-    Keyboard.dismiss(); // Fechar o teclado após calcular
+    Keyboard.dismiss(); 
 
-    // Cálculo do custo por quilômetro
     const custoAlcool = alcool / mediaA;
     const custoGasolina = gasolina / mediaG;
 
-    // Comparar custo por quilômetro
     setResultado(custoAlcool < custoGasolina ? 'Abasteça com Álcool' : 'Abasteça com Gasolina');
   };
 
